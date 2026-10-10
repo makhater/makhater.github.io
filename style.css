@@ -134,3 +134,12 @@
 @media(max-width:760px){
  .profile-home .profile-location .inline-social-actions .social-link{width:28px;height:28px}
 }
+
+/* Mobile: reserve space below the overlapping portrait before the name */
+@media(max-width:760px){
+ .profile-home .profile-title-row{margin-top:82px}
+ .profile-home .profile-photo{z-index:2}
+}
+@media(max-width:420px){
+ .profile-home .profile-title-row{margin-top:70px}
+}
