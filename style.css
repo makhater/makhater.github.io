@@ -123,3 +123,14 @@
  .profile-home .profile-title-row .identity-actions{order:2;margin-top:2px}
  .arabic-home .profile-title-row .identity-actions{order:2}
 }
+
+/* Contact icons belong on the location / availability line, not beside the name */
+.profile-home .profile-title-row .identity-actions{display:none}
+.profile-home .profile-location{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.profile-home .profile-location .inline-social-actions{display:inline-flex;align-items:center;gap:6px;margin:0 0 0 auto;padding:0;flex:0 0 auto}
+.profile-home .profile-location .inline-social-actions .social-link{width:30px;height:30px;font-size:.78rem;margin:0}
+.profile-home .profile-location .inline-social-actions .github-social{font-size:.65rem}
+.arabic-home .profile-location .inline-social-actions{margin-left:0;margin-right:auto}
+@media(max-width:760px){
+ .profile-home .profile-location .inline-social-actions .social-link{width:28px;height:28px}
+}
