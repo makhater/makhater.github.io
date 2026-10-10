@@ -96,3 +96,7 @@
 @media(max-width:760px){
   .arabic-home .identity-actions .btn.primary{display:none}
 }
+
+
+/* Use IBM Plex Sans Arabic only on Arabic-language pages */
+.arabic-home,.arabic-page{font-family:"IBM Plex Sans Arabic",sans-serif}
