@@ -53,3 +53,26 @@
  .profile-home .identity-actions .btn{padding:9px 10px}
  .profile-home .identity-content h1{font-size:1.65rem}
 }
+
+
+/* Arabic homepage: right-to-left layout while preserving the shared visual identity */
+.arabic-home{direction:rtl;text-align:right;font-family:Tahoma,"Segoe UI",Arial,sans-serif}
+.arabic-home .nav{direction:rtl}
+.arabic-home .brand-mark{margin-right:0;margin-left:8px}
+.arabic-home .profile-layout{direction:rtl}
+.arabic-home .identity-content{padding:0 300px 32px 38px}
+.arabic-home .profile-photo{left:auto;right:38px}
+.arabic-home .identity-actions{justify-content:flex-start}
+.arabic-home .profile-location{direction:rtl}
+.arabic-home .profile-location .availability{direction:rtl}
+.arabic-home .social-link{margin-left:0;margin-right:5px}
+.arabic-home .education-row{direction:rtl}
+.arabic-home .research-note h3[dir="ltr"]{text-align:left}
+.arabic-home .project-row{direction:rtl;text-align:right}
+.arabic-home .footer-inner{direction:rtl}
+.arabic-home .language-switch{border:1px solid #d6e4ef;border-radius:8px;padding:5px 10px;background:#f4f9fd;color:#075eb7}
+@media(max-width:760px){
+ .arabic-home .identity-content{padding:0 20px 24px}
+ .arabic-home .profile-photo{left:auto;right:20px}
+ .arabic-home .identity-actions{justify-content:flex-start}
+}
