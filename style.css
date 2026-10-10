@@ -143,3 +143,11 @@
 @media(max-width:420px){
  .profile-home .profile-title-row{margin-top:70px}
 }
+
+/* Keep the portrait at its original mobile overlap position */
+@media(max-width:760px){
+ .profile-home .profile-photo{top:-76px}
+}
+@media(max-width:420px){
+ .profile-home .profile-photo{top:-62px}
+}
