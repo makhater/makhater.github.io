@@ -89,3 +89,10 @@
 .arabic-page ul{padding-inline-start:0;padding-inline-end:1.4rem}
 .arabic-page .callout p[dir="ltr"]{text-align:left}
 @media(max-width:620px){.arabic-page .nav{align-items:flex-start}}
+
+
+/* Arabic mobile refinement: keep the portrait unobstructed and mirror the cover */
+.arabic-home .cover-photo{transform:scaleX(-1)}
+@media(max-width:760px){
+  .arabic-home .identity-actions .btn.primary{display:none}
+}
