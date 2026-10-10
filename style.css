@@ -5,3 +5,51 @@
 /* LinkedIn-inspired personal profile layout */
 .profile-home{background:#f3f6f8}.profile-layout{display:grid;grid-template-columns:minmax(0, min(730px, 1fr)) 280px;gap:20px;align-items:start;padding-top:24px;padding-bottom:40px}.profile-main,.profile-aside{display:grid;gap:12px;min-width:0}.profile-card{background:#fff;border:1px solid #d8e0e6;border-radius:10px;overflow:hidden;box-shadow:0 1px 1px rgba(0,0,0,.025)}.cover-photo{height:180px;position:relative;overflow:hidden;background:linear-gradient(115deg,#dcecf5 0%,#c9e2f1 48%,#eaf3f8 100%)}.cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 0 45%,rgba(255,255,255,.42) 45% 46%,transparent 46% 66%,rgba(67,132,168,.08) 66% 100%)}.cover-line{position:absolute;border:1px solid rgba(49,113,151,.18);border-radius:50%;transform:rotate(-18deg)}.cover-line-one{width:520px;height:240px;right:-100px;top:-130px}.cover-line-two{width:440px;height:220px;right:20px;top:70px}.identity-content{padding:0 26px 24px;position:relative}.profile-photo{display:block;width:230px;height:230px;border-radius:50%;object-fit:contain;object-position:center top;border:7px solid #fff;outline:2px solid #d8e0e6;margin-top:-120px;position:relative;background:#e7f3fa;box-shadow:0 2px 5px rgba(0,0,0,.14)}.identity-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:12px;flex-wrap:wrap}.identity-content h1{font-size:clamp(1.8rem,4vw,2.25rem);line-height:1.2;letter-spacing:-.035em;margin:12px 0 7px;color:#1d2b34}.profile-headline{font-size:1.04rem;color:#354957;margin:0;max-width:650px}.profile-location{font-size:.9rem;color:#667782;margin:7px 0 16px}.identity-summary{color:#465966;margin:0 0 14px;max-width:670px}.profile-links{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:.91rem;font-weight:600}.content-card{padding:23px 26px}.card-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.card-title h2{font-size:1.45rem;margin:0}.card-title>a{font-size:.9rem;font-weight:650}.content-card>p{color:#40525f;margin:0 0 12px}.content-card>p:last-child{margin-bottom:0}.profile-skills{display:flex;gap:8px;flex-wrap:wrap}.profile-skills span{display:inline-block;padding:7px 11px;border:1px solid #d8e0e6;border-radius:6px;background:#f8fafb;color:#334a59;font-size:.9rem}.content-card .small{margin-top:14px}.project-row{display:grid;grid-template-columns:54px minmax(0,1fr);gap:14px;padding:17px 0;border-top:1px solid #e4e9ed;color:inherit}.project-row:first-of-type{border-top:0;padding-top:0}.project-row:hover{text-decoration:none}.project-row:hover h3{color:var(--blue-dark);text-decoration:underline}.project-icon,.education-icon{width:52px;height:52px;border-radius:8px;background:#e8f3fa;color:#356b8a;display:grid;place-items:center;font-weight:800;font-size:.86rem}.project-row h3{margin:0 0 5px;font-size:1.02rem}.project-row p{margin:0;color:#5e6f7a;font-size:.94rem}.project-meta{display:block;margin-top:7px;color:#71808a;font-size:.84rem}.education-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:15px 0;border-top:1px solid #e4e9ed}.education-row:first-of-type{border-top:0;padding-top:0}.education-row h3{font-size:1rem;margin:0 0 4px}.education-row p{margin:0;color:#5e6f7a;font-size:.93rem}.research-note{background:#f7fafc;border:1px solid #e1e8ed;border-radius:8px;padding:15px;margin-top:10px}.research-note p{color:#5e6f7a;margin:5px 0 0}.side-card{padding:19px 20px}.side-card h2{font-size:1.15rem;margin-bottom:13px}.side-card p{margin:8px 0;color:#526571;font-size:.92rem}.side-card .side-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;font-weight:750;color:#7a8993;margin-top:15px}.side-card .btn{margin-top:5px}.profile-home .footer{background:#f3f6f8}.profile-home .footer-inner{max-width:1080px}
 @media(max-width:850px){.profile-layout{grid-template-columns:minmax(0,1fr)}.profile-aside{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-aside .side-card:last-child{grid-column:1/-1}}@media(max-width:620px){.wrap{width:min(100% - 24px,1080px)}.nav{align-items:flex-start;flex-direction:column;padding:10px 0}.nav-links{gap:14px}.profile-layout{padding-top:12px;gap:10px}.profile-aside{grid-template-columns:1fr}.profile-aside .side-card:last-child{grid-column:auto}.cover-photo{height:130px}.identity-content{padding:0 18px 20px}.profile-photo{width:180px;height:180px;margin-top:-92px}.identity-actions{justify-content:flex-start;margin-top:12px}.content-card{padding:19px}.card-title{align-items:flex-start;flex-direction:column}.project-row{grid-template-columns:44px minmax(0,1fr);gap:11px}.project-icon,.education-icon{width:44px;height:44px}}
+
+
+/* Homepage hero refresh: panoramic banner and overlapping portrait */
+.profile-home .profile-layout{display:block;width:min(1440px,calc(100% - 48px));padding-top:30px}
+.profile-home .profile-main{display:block}
+.profile-home .identity-card{overflow:hidden;border-radius:14px;box-shadow:0 10px 34px rgba(22,42,70,.08)}
+.profile-home .cover-photo{height:clamp(230px,29vw,390px);background-color:#b9d3e8;background-image:url("assets/MohammedKhater_profile-banner.jpg");background-size:cover;background-position:center 43%;position:relative}
+.profile-home .cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,38,75,.12),transparent 48%,rgba(15,30,53,.04))}
+.profile-home .identity-content{padding:0 38px 32px 300px;min-height:255px;position:relative}
+.profile-home .profile-photo{width:250px;height:250px;object-fit:cover;object-position:center 25%;position:absolute;left:38px;top:-115px;margin:0;border:6px solid #fff;outline:0;box-shadow:0 10px 28px rgba(16,35,60,.16);background:#e7f3fa}
+.profile-home .identity-actions{justify-content:flex-start;align-items:center;margin:22px 0 0;gap:12px}
+.profile-home .identity-actions .btn{border-radius:10px;padding:12px 20px;font-size:.98rem}
+.profile-home .identity-actions .btn.primary{box-shadow:0 4px 12px rgba(10,102,194,.18)}
+.profile-home .identity-content h1{font-size:clamp(2rem,4vw,3.2rem);margin:18px 0 4px;color:#101d39;letter-spacing:-.045em}
+.profile-home .profile-headline{font-size:clamp(1rem,1.6vw,1.35rem);font-weight:700;color:#0964d8;max-width:none}
+.profile-home .profile-location{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#28374d;margin:14px 0 18px;font-size:.96rem}
+.profile-home .availability{display:inline-flex;align-items:center;gap:7px}
+.profile-home .availability i{width:10px;height:10px;border-radius:50%;background:#16834a;display:inline-block}
+.profile-home .identity-summary{max-width:900px;font-size:1.03rem;color:#182744;line-height:1.55}
+.profile-home .profile-links{font-size:.95rem}
+.profile-home .social-link{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#0a66c2;color:#fff;font-weight:800;font-size:1.1rem;margin-left:5px}
+.profile-home .social-link.github-social{background:#171717;font-size:.78rem}
+.profile-home .profile-aside{display:none}
+.profile-home .content-card{margin-top:18px}
+.profile-home .education-row{display:flex;gap:14px;align-items:flex-start;margin:16px 0}
+.profile-home .research-note{margin-top:16px;padding:18px 20px;background:#f2f7fd;border:1px solid #d9e8f8;border-radius:10px}
+.profile-home .research-note h3{font-size:1.05rem;margin:8px 0}
+.profile-home .research-note p{color:#3e5065}
+@media(max-width:760px){
+ .profile-home .profile-layout{width:calc(100% - 24px);padding-top:14px}
+ .profile-home .cover-photo{height:220px;background-position:62% center}
+ .profile-home .identity-content{padding:0 20px 24px;min-height:0}
+ .profile-home .profile-photo{width:142px;height:142px;top:-76px;left:20px;border-width:4px}
+ .profile-home .identity-actions{margin-top:20px;justify-content:flex-start}
+ .profile-home .identity-actions .btn{padding:10px 13px;font-size:.88rem}
+ .profile-home .identity-content h1{font-size:clamp(1.7rem,7vw,2.3rem);margin-top:18px}
+ .profile-home .profile-headline{font-size:1rem}
+ .profile-home .profile-location{font-size:.88rem;gap:7px}
+ .profile-home .identity-summary{font-size:.96rem}
+ .profile-home .social-link{width:36px;height:36px}
+}
+@media(max-width:420px){
+ .profile-home .cover-photo{height:190px}
+ .profile-home .profile-photo{width:118px;height:118px;top:-62px}
+ .profile-home .identity-actions{gap:8px}
+ .profile-home .identity-actions .btn{padding:9px 10px}
+ .profile-home .identity-content h1{font-size:1.65rem}
+}
