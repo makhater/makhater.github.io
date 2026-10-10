@@ -151,3 +151,7 @@
 @media(max-width:420px){
  .profile-home .profile-photo{top:-62px}
 }
+
+/* Fine-tune mobile portrait position as requested */
+@media(max-width:760px){.profile-home .profile-photo{top:-128px}}
+@media(max-width:420px){.profile-home .profile-photo{top:-128px}}
