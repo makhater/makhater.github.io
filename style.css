@@ -100,3 +100,26 @@
 
 /* Use IBM Plex Sans Arabic only on Arabic-language pages */
 .arabic-home,.arabic-page{font-family:"IBM Plex Sans Arabic",sans-serif}
+
+/* Compact profile heading row with small inline contact icons */
+.profile-home .profile-title-row{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px}
+.profile-home .profile-title-text{min-width:0;flex:1}
+.profile-home .profile-title-row .identity-actions{flex:0 0 auto;display:flex;align-items:center;gap:8px;margin:0}
+.profile-home .profile-title-row .social-link{width:32px;height:32px;font-size:.88rem;margin:0}
+.profile-home .profile-title-row .social-link.github-social{font-size:.68rem}
+.profile-home .profile-title-row .email-social{font-size:.9rem}
+.profile-home .profile-title-row .identity-content h1,
+.profile-home .profile-title-row h1{margin:0 0 4px}
+.profile-home .profile-title-row .profile-headline{line-height:1.4}
+.arabic-home .profile-title-row{direction:rtl}
+@media(max-width:760px){
+ .profile-home .profile-title-row{gap:10px;align-items:flex-start}
+ .profile-home .profile-title-row .identity-actions{gap:6px;padding-top:3px}
+ .profile-home .profile-title-row .social-link{width:29px;height:29px;font-size:.78rem}
+}
+@media(max-width:520px){
+ .profile-home .profile-title-row{flex-wrap:wrap}
+ .profile-home .profile-title-row .profile-title-text{flex-basis:100%}
+ .profile-home .profile-title-row .identity-actions{order:2;margin-top:2px}
+ .arabic-home .profile-title-row .identity-actions{order:2}
+}
