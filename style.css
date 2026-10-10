@@ -76,3 +76,16 @@
  .arabic-home .profile-photo{left:auto;right:20px}
  .arabic-home .identity-actions{justify-content:flex-start}
 }
+
+/* Shared RTL layout for translated inner pages */
+.arabic-page{direction:rtl;text-align:right;font-family:Tahoma,"Segoe UI",Arial,sans-serif}
+.arabic-page .nav{direction:rtl}
+.arabic-page .brand-mark{margin-right:0;margin-left:8px}
+.arabic-page .footer-inner{direction:rtl}
+.arabic-page .language-switch,.language-switch{border:1px solid #d6e4ef;border-radius:8px;padding:5px 10px;background:#f4f9fd;color:#075eb7;white-space:nowrap}
+.arabic-page .timeline{border-left:0;border-right:2px solid #d7e9f5;padding-left:0;padding-right:22px}
+.arabic-page .timeline-item:before{left:auto;right:-29px}
+.arabic-page .card-link{margin-inline-start:0}
+.arabic-page ul{padding-inline-start:0;padding-inline-end:1.4rem}
+.arabic-page .callout p[dir="ltr"]{text-align:left}
+@media(max-width:620px){.arabic-page .nav{align-items:flex-start}}
